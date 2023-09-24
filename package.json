@@ -1,6 +1,7 @@
 {
   "name": "online-shop-fe",
   "version": "0.1.0",
+  "homepage": "https://sherryylin0719.github.io/online-shop-FE",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -11,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.2",
     "font-awesome": "^4.7.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -22,7 +24,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint-check": "eslint src",
-    "lint": "eslint src --fix"
+    "lint": "eslint src --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,12 +47,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
     "eslint": "^8.49.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-n": "^16.1.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.33.2",
-    "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
+    "eslint-plugin-react": "^7.33.2"
   }
 }
