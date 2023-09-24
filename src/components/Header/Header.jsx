@@ -16,7 +16,7 @@ function Header () {
                 <a className="nav-link" aria-current="page" href="/">Home</a>
               </li>
               <li className={`dropdown-center ${styles.navItem}`}>
-                <a className={`dropdown-toggle ${styles.navbarProductsToggler}`} data-bs-toggle="dropdown" aria-controls="ProductsNav" aria-expanded="false" aria-label="Toggle navigation" role="button">Products
+                <a className={`dropdown-toggle ${styles.navbarProductsToggler}`} data-bs-toggle="dropdown" aria-controls="ProductsNav" aria-expanded="false" aria-label="Toggle navigation" role="button">Collections
                 </a>
                 <ul className="dropdown-menu">
                   <li className="product-category">

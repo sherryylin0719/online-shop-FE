@@ -5,6 +5,7 @@
 .navbarProductsToggler:hover {
   cursor: pointer;
 }
+
 @media screen and (max-width: 768px) {
   .mediumDownHide {
     display: none;
@@ -14,6 +15,23 @@
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
+    padding-right: 1rem;
+  }
+  .mobileNavItem {
+    padding: 7px 0;
+    border-top: 1px solid grey; 
+  }
+  .mobileNavContainer {
+    padding: 0 1.5rem;
+  }
+  .navbarProductsToggler {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobileCategoryLink {
+    font-size: 0.95em; 
+    padding: 1rem 0;
   }
 }
 @media screen and (min-width: 769px) {
@@ -26,6 +44,15 @@
   .navbarRight {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+  }
+  .navbarWrapper {
+    display: flex;
+    align-items: center;
     justify-content: center;
+  }
+  .navbarContainer {
+    width: 80%;
+    padding: 0 1.5rem;
   }
 }

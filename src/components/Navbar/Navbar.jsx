@@ -6,8 +6,8 @@ function Navbar () {
   return (
     <div className={`nav-bar ${styles.pinkTheme}`}>
       <div className={`wrapper ${styles.mediumDownHide}`}>
-        <div className="container-fluid">
-          <div className="row">
+        <div className={`container-fluid ${styles.navbarWrapper}`}>
+          <div className={`row ${styles.navbarContainer}`}>
             <div className="col-4"></div>
             <div className={`col-8 ${styles.navbarRight}`}>
               <ul className="nav justify-content-center">
@@ -41,43 +41,43 @@ function Navbar () {
           </div>
         </div>
         <div className="collapse" id="MobileNav">
-            <ul className="p-4">
-              <li className="mobile-nav-item">
+            <ul className={`${styles.mobileNavContainer}`}>
+              <li className={`${styles.mobileNavItem}`}>
                 <a className="mobile-nav-link" aria-current="page" href="/">Home</a>
               </li>
-              <li className="mobile-nav-item">
-                <a className={`${styles.navbarProductsToggler}`} data-bs-toggle="collapse" data-bs-target="#MobileProductsNav" aria-controls="MobileProductsNav" aria-expanded="false" aria-label="Toggle navigation">Products
+              <li className={`${styles.mobileNavItem}`}>
+                <a className={`${styles.navbarProductsToggler}`} data-bs-toggle="collapse" data-bs-target="#MobileProductsNav" aria-controls="MobileProductsNav" aria-expanded="false" aria-label="Toggle navigation">Collections
                   <span className="navbar-toggler-icon">+</span>
                 </a>
                 <div className="collapse" id="MobileProductsNav">
                   <li className="mobile-product-category">
-                    <a className="mobile-category-link" aria-current="page" href="/products/top">Top</a>
+                    <a className={`${styles.mobileCategoryLink}`} aria-current="page" href="/products/top">Top</a>
                   </li>
                   <li className="mobile-product-category">
-                    <a className="mobile-category-link" aria-current="page" href="/products/bottom">Bottom</a>
+                    <a className={`${styles.mobileCategoryLink}`} aria-current="page" href="/products/bottom">Bottom</a>
                   </li>
                   <li className="mobile-product-category">
-                    <a className="mobile-category-link" aria-current="page" href="/products/onepiece">OnePiece</a>
+                    <a className={`${styles.mobileCategoryLink}`} aria-current="page" href="/products/onepiece">OnePiece</a>
                   </li>
                   <li className="mobile-product-category">
-                    <a className="mobile-category-link" aria-current="page" href="/products/suit">Suit</a>
+                    <a className={`${styles.mobileCategoryLink}`} aria-current="page" href="/products/suit">Suit</a>
                   </li>
                   <li className="mobile-product-category">
-                    <a className="mobile-category-link" aria-current="page" href="/products/accessory">Accessory</a>
+                    <a className={`${styles.mobileCategoryLink}`} aria-current="page" href="/products/accessory">Accessory</a>
                   </li>
                 </div>
               </li>
-              <li className="mobile-nav-item">
-                <a className="mobile-nav-link" aria-current="page" href="/">Purchase Info</a>
+              <li className={`${styles.mobileNavItem}`}>
+                <a className="mobile-nav-link" aria-current="page" href="/pages/notice">Purchase Info</a>
               </li>
-              <li className="mobile-nav-item">
-                <a className="mobile-nav-link" aria-current="page" href="/">Payment and Delivery</a>
+              <li className={`${styles.mobileNavItem}`}>
+                <a className="mobile-nav-link" aria-current="page" href="/pages/payshipping">Payment and Delivery</a>
               </li>
-              <li className="mobile-nav-item">
-                <a className="mobile-nav-link" aria-current="page" href="/">Login</a>
+              <li className={`${styles.mobileNavItem}`}>
+                <a className="mobile-nav-link" aria-current="page" href="/login">Login</a>
               </li>
-              <li className="mobile-nav-item">
-                <a className="mobile-nav-link" aria-current="page" href="/">Register</a>
+              <li className={`${styles.mobileNavItem}`}>
+                <a className="mobile-nav-link" aria-current="page" href="/register">Register</a>
               </li>
             </ul>
         </div>
