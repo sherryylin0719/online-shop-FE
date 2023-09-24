@@ -1,0 +1,11 @@
+.wrapper {
+  width: 100%;
+}
+.footerContainer {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
