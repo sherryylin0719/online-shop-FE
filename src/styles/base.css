@@ -5,7 +5,8 @@
 }
 
 :root {
-  font-family: 'Poppins', 'Noto Sans TC', sans-serif;
+  font-family: 'Josefin Sans', 'Noto Sans TC', sans-serif;
+  color: black
 }
 
 ul,
@@ -14,4 +15,9 @@ li {
   list-style: none;
   margin: 0px;
   padding: 0px;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
 }
