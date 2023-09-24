@@ -1,0 +1,31 @@
+/* Navbar */
+.pinkTheme {
+  background-color: pink;
+}
+.navbarProductsToggler:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .mediumDownHide {
+    display: none;
+  }
+  .mobileNavbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .largeHide {
+    display: none;
+  }
+  .mediumDownHide {
+    display: block;
+  }
+  .navbarRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
