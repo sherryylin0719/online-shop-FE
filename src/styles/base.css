@@ -6,7 +6,7 @@
 
 :root {
   font-family: 'Josefin Sans', 'Noto Sans TC', sans-serif;
-  color: black
+  color: black;
 }
 
 ul,
@@ -33,7 +33,6 @@ main {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
 }
