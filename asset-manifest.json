@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/online-shop-FE/static/css/main.3f629687.css",
-    "main.js": "/online-shop-FE/static/js/main.26860d65.js",
+    "main.css": "/online-shop-FE/static/css/main.766d3dd7.css",
+    "main.js": "/online-shop-FE/static/js/main.18427b32.js",
     "static/js/787.7522a46e.chunk.js": "/online-shop-FE/static/js/787.7522a46e.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/online-shop-FE/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/online-shop-FE/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -9,12 +9,12 @@
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/online-shop-FE/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/online-shop-FE/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/online-shop-FE/index.html",
-    "main.3f629687.css.map": "/online-shop-FE/static/css/main.3f629687.css.map",
-    "main.26860d65.js.map": "/online-shop-FE/static/js/main.26860d65.js.map",
+    "main.766d3dd7.css.map": "/online-shop-FE/static/css/main.766d3dd7.css.map",
+    "main.18427b32.js.map": "/online-shop-FE/static/js/main.18427b32.js.map",
     "787.7522a46e.chunk.js.map": "/online-shop-FE/static/js/787.7522a46e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f629687.css",
-    "static/js/main.26860d65.js"
+    "static/css/main.766d3dd7.css",
+    "static/js/main.18427b32.js"
   ]
 }
