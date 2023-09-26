@@ -2,6 +2,7 @@ import styles from './Navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
+import { baseUrl } from '../../App'
 
 function Navbar () {
   return (
@@ -13,14 +14,14 @@ function Navbar () {
             <div className={`col-8 ${styles.navbarRight}`}>
               <ul className="nav justify-content-center">
                 <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/login">Login</Link>
+                  <Link className="nav-link" aria-current="page" to={`/${baseUrl}/login`}>Login</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" aria-current="page" to="/register">Register</Link>
+                  <Link className="nav-link" aria-current="page" to={`/${baseUrl}/register`}>Register</Link>
                 </li>
               </ul>
               <div className="cart-module">
-                <Link to="/cart" className="cart-page-link">
+                <Link to={`/${baseUrl}/cart`} className="cart-page-link">
                   <FontAwesomeIcon icon={faShoppingCart} />
                 </Link>
               </div>
@@ -36,7 +37,7 @@ function Navbar () {
             </button>
           </div>
           <div className="cart-module">
-            <Link to="/cart" className="cart-page-link">
+            <Link to={`/${baseUrl}/cart`} className="cart-page-link">
               <FontAwesomeIcon icon={faShoppingCart} />
             </Link>
           </div>
@@ -44,7 +45,7 @@ function Navbar () {
         <div className="collapse" id="MobileNav">
             <ul className={`${styles.mobileNavContainer}`}>
               <li className={`${styles.mobileNavItem}`}>
-                <Link className="mobile-nav-link" aria-current="page" to="/">Home</Link>
+                <Link className="mobile-nav-link" aria-current="page" to={`/${baseUrl}`}>Home</Link>
               </li>
               <li className={`${styles.mobileNavItem}`}>
                 <a className={`${styles.navbarProductsToggler}`} data-bs-toggle="collapse" data-bs-target="#MobileProductsNav" aria-controls="MobileProductsNav" aria-expanded="false" aria-label="Toggle navigation">Collections
@@ -52,33 +53,33 @@ function Navbar () {
                 </a>
                 <div className="collapse" id="MobileProductsNav">
                   <li className="mobile-product-category">
-                    <Link className={`${styles.mobileCategoryLink}`} aria-current="page" to="/collections/Top">Top</Link>
+                    <Link className={`${styles.mobileCategoryLink}`} aria-current="page" to={`/${baseUrl}/collections/Top`}>Top</Link>
                   </li>
                   <li className="mobile-product-category">
-                    <Link className={`${styles.mobileCategoryLink}`} aria-current="page" to="/collections/Bottom">Bottom</Link>
+                    <Link className={`${styles.mobileCategoryLink}`} aria-current="page" to={`/${baseUrl}/collections/Bottom`}>Bottom</Link>
                   </li>
                   <li className="mobile-product-category">
-                    <Link className={`${styles.mobileCategoryLink}`} aria-current="page" to="/collections/OnePiece">OnePiece</Link>
+                    <Link className={`${styles.mobileCategoryLink}`} aria-current="page" to={`/${baseUrl}/collections/OnePiece`}>OnePiece</Link>
                   </li>
                   <li className="mobile-product-category">
-                    <Link className={`${styles.mobileCategoryLink}`} aria-current="page" to="/collections/Suit">Suit</Link>
+                    <Link className={`${styles.mobileCategoryLink}`} aria-current="page" to={`/${baseUrl}/collections/Suit`}>Suit</Link>
                   </li>
                   <li className="mobile-product-category">
-                    <Link className={`${styles.mobileCategoryLink}`} aria-current="page" to="/collections/Accessory">Accessory</Link>
+                    <Link className={`${styles.mobileCategoryLink}`} aria-current="page" to={`/${baseUrl}/collections/Accessory`}>Accessory</Link>
                   </li>
                 </div>
               </li>
               <li className={`${styles.mobileNavItem}`}>
-                <Link className="mobile-nav-link" aria-current="page" to="/pages/notice">Purchase Info</Link>
+                <Link className="mobile-nav-link" aria-current="page" to={`/${baseUrl}/pages/notice`}>Purchase Info</Link>
               </li>
               <li className={`${styles.mobileNavItem}`}>
-                <Link className="mobile-nav-link" aria-current="page" to="/pages/payshipping">Payment and Delivery</Link>
+                <Link className="mobile-nav-link" aria-current="page" to={`/${baseUrl}/pages/payshipping`}>Payment and Delivery</Link>
               </li>
               <li className={`${styles.mobileNavItem}`}>
-                <Link className="mobile-nav-link" aria-current="page" to="/login">Login</Link>
+                <Link className="mobile-nav-link" aria-current="page" to={`/${baseUrl}/login`}>Login</Link>
               </li>
               <li className={`${styles.mobileNavItem}`}>
-                <Link className="mobile-nav-link" aria-current="page" to="/register">Register</Link>
+                <Link className="mobile-nav-link" aria-current="page" to={`/${baseUrl}/register`}>Register</Link>
               </li>
             </ul>
         </div>
