@@ -8,7 +8,7 @@ import CollectionPage from './pages/Collection/CollectionPage'
 import CollectionProvider from './components/Context/CollectionContext'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-const baseUrl = 'online-shop-FE'
+export const baseUrl = 'online-shop-FE'
 
 function App () {
   return (
@@ -28,4 +28,4 @@ function App () {
   )
 }
 
-export default { App, baseUrl }
+export default App
