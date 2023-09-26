@@ -8,18 +8,16 @@ import CollectionPage from './pages/Collection/CollectionPage'
 import CollectionProvider from './components/Context/CollectionContext'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-export const baseUrl = 'online-shop-FE'
-
 function App () {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/online-shop-FE">
       <CollectionProvider>
         <Navbar/>
         <Header/>
         <Main>
           <Routes>
-            <Route path={`/${baseUrl}/collections/:category`} element={<CollectionPage/>}/>
-            <Route exact path={`/${baseUrl}`} element={<CollectionPage/>}/>
+            <Route path={'/collections/:category'} element={<CollectionPage/>}/>
+            <Route exact path={'/'} element={<CollectionPage/>}/>
           </Routes>
         </Main>
         <Footer/>
