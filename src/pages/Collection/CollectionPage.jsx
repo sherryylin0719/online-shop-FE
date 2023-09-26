@@ -6,8 +6,14 @@ import styles from './Collection.module.css'
 function CollectionPage () {
   const { collections } = useContext(CollectionContext)
   const { category } = useParams()
-  const filteredCollections = collections.filter((collection) => collection.category === category)
-  const displayCollections = filteredCollections.length > 0 ? filteredCollections : collections
+  let displayCollections
+
+  if (category === '/') {
+    displayCollections = collections
+  } else {
+    const filteredCollections = collections.filter((collection) => collection.category === category)
+    displayCollections = filteredCollections.length > 0 ? filteredCollections : []
+  }
 
   return (
     <div className={`${styles.collectionWrapper}`}>
