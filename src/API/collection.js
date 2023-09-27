@@ -7,6 +7,7 @@ const getProducts = async () => {
     return res.data.data.products
   } catch (error) {
     console.error('Error fetching product data:', error)
+    return { success: false, error: 'Fetching product data failed' }
   }
 }
 

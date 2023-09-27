@@ -8,7 +8,7 @@ function CollectionPage () {
   const { category } = useParams()
   let displayCollections
 
-  if (category === '/') {
+  if (!category) {
     displayCollections = collections
   } else {
     const filteredCollections = collections.filter((collection) => collection.category === category)
