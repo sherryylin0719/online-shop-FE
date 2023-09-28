@@ -17,7 +17,7 @@ function CartPage () {
     <div className={`${styles.cartWrapper}`}>
       <div className='cartContainer'>
         <div className='cartHeader'>
-          <h1>Cart</h1>
+          <h2>Cart</h2>
         </div>
         <div className='cartContent'>
           <div className='cartItems'>

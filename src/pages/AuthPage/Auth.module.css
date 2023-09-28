@@ -1,0 +1,35 @@
+.labelHidden {
+  display: none;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.loginForm, .registerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.loginInput, .registerInput {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  min-width: 400px
+}
+
+.logInBtn, .registerBtn {
+  margin: 10px 0;
+}
+
+.registerLink:hover, .loginLink:hover {
+  color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  .loginInput, .registerInput {
+    width: 100%;
+  }
+}

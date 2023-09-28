@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
 import LoginPage from './pages/AuthPage/LoginPage'
+import RegisterPage from './pages/AuthPage/RegisterPage'
 import CollectionPage from './pages/Collection/CollectionPage'
 import ProductPage from './pages/Product/ProductPage'
 import CartPage from './pages/Cart/CartPage'
@@ -24,6 +25,7 @@ function App () {
             <Main>
               <Routes>
                 <Route path='/cart' element={<CartPage/>}/>
+                <Route path='/register' element={<RegisterPage/>}/>
                 <Route path='/login' element={<LoginPage/>}/>
                 <Route path='/collections/:category/:productId' element={<ProductPage/>}></Route>
                 <Route path='/collections/:category' element={<CollectionPage/>}/>
