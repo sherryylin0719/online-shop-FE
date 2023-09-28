@@ -9,6 +9,8 @@ import RegisterPage from './pages/AuthPage/RegisterPage'
 import CollectionPage from './pages/Collection/CollectionPage'
 import ProductPage from './pages/Product/ProductPage'
 import CartPage from './pages/Cart/CartPage'
+import NoticePage from './pages/Info/NoticePage'
+import PayshippingPage from './pages/Info/PayshippingPage'
 import CollectionProvider from './components/Context/CollectionContext'
 import CartProvider from './components/Context/CartContext'
 import { AuthProvider } from './components/Context/AuthContext'
@@ -24,6 +26,8 @@ function App () {
             <Header/>
             <Main>
               <Routes>
+                <Route path='/payshipping' element={<PayshippingPage/>}/>
+                <Route path='/notice' element={<NoticePage/>}/>
                 <Route path='/cart' element={<CartPage/>}/>
                 <Route path='/register' element={<RegisterPage/>}/>
                 <Route path='/login' element={<LoginPage/>}/>

@@ -39,10 +39,10 @@ function Header () {
                 </ul>
               </li>
               <li className={`${styles.navItem}`}>
-                <Link className="nav-link" aria-current="page" to={'/pages/notice'}>Purchase Info</Link>
+                <Link className="nav-link" aria-current="page" to={'/notice'}>Purchase Info</Link>
               </li>
               <li className={`${styles.navItem}`}>
-                <Link className="nav-link" aria-current="page" to={'/pages/payshipping'}>Payment and Delivery</Link>
+                <Link className="nav-link" aria-current="page" to={'/payshipping'}>Payment and Delivery</Link>
               </li>
             </ul>
           </div>
