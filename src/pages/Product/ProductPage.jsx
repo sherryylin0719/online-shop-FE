@@ -29,6 +29,7 @@ function ProductPage () {
       price: product.price,
       quantity: quantity,
       image: product.image[0].url,
+      category: product.category,
     };
     const existingItemIndex = cart.findIndex((cartItem) => cartItem.id === productId);
 
@@ -61,8 +62,8 @@ function ProductPage () {
             <label htmlFor="quantity">Quantity</label>
             <input type="number" id='quantity' name='quantity' value={quantity} min='1' max={product.quantity} onChange={handleQuantityChange} className={`${styles.quantitySelector}`}/>
           </div>
-          <button type='submit' id={`${styles.AddToCart}`} className="btn btn-outline-primary">
-            <span onClick={AddToCart}>Add to Cart</span>
+          <button type='submit' id={`${styles.AddToCart}`} className="btn btn-outline-primary" onClick={AddToCart}>
+            <span>Add to Cart</span>
           </button>
         </div>
       </div>

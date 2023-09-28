@@ -24,24 +24,26 @@
   margin-top: 20px;
 }
 
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage {
+  max-width: 15rem;
+  max-height: 25rem;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px) {
   .productContent {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
-  }
-  .imageWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .productImage {
-    max-width: 15rem;
-    max-height: 25rem;
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -50,18 +52,5 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-  }
-  .imageWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .productImage {
-    max-width: 15rem;
-    max-height: 25rem;
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }

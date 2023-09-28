@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import styles from './Navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -49,7 +48,6 @@ function Navbar () {
                 <Link className="mobile-nav-link" aria-current="page" to={'/'}>Home</Link>
               </li>
               <li className={`${styles.mobileNavItem}`}>
-                // eslint-disable-next-line jsx-a11y/anchor-is-valid
                 <a className={`${styles.navbarProductsToggler}`} data-bs-toggle="collapse" data-bs-target="#MobileProductsNav" aria-controls="MobileProductsNav" aria-expanded="false" aria-label="Toggle navigation" href='#'>Collections
                   <span className="navbar-toggler-icon">+</span>
                 </a>
